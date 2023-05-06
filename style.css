@@ -157,6 +157,7 @@ img.img-question-mark-about {
 .projets-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .projet-card {
     display: flex;
