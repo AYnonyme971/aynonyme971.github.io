@@ -105,7 +105,10 @@
         </section>
       </main>
       <footer>
-        <p>Copyright © 2021 - <a href="https://github.com/AYnonyme971">AYnonyme</a></p>
+        <div class="copyright">
+          <p>Copyright © <span id="date">2000</span> - <a href="https://github.com/AYnonyme971">AYnonyme</a></p>
+        </div>
+        
         <div class="liens-container">
           <div class="lien-group">
             <h3>Résaux sociaux</h3>
@@ -119,5 +122,13 @@
           </div>
         </div>
       </footer>
+
+      <script>
+        const spanDate = document.getElementById('date');
+        const date = new Date().getFullYear();
+
+        spanDate.innerHTML=date;
+      </script>
+
     </body>
 </html> 

@@ -289,3 +289,12 @@ a .projet-card-img {
     color: #3377dd;
     text-decoration: none;
 }
+footer {
+    background: #292929;
+    margin: 0;
+    padding: 7px;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+}
