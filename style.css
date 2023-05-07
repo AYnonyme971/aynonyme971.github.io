@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Couleurs utilisées : 
+#3377dd : le bleu des liens
+#610a0a : couleur de l'header
+#4d0606 : bordure de l'header
+#181818 : fond de la page
+#f1f1f1 : couleur générale de la page
+#1f1f1f : couleur lorsque un lien du header est survolé
+#234fc9 : couleur du texte 'Front-End'
+#d15e1b : couleur du texte 'Back-End'
+#9e360d : couleur du texte 'développeur d'application'
+#818181 : couleur de fond des loaders compétences
+
+#e44d26 : couleur du loader HTML
+#2642e4 : couleur du loader CSS
+#fdb04f : couleur du loader JS
+#001100 : couleur du texte loader JS
+#202020 : couleur de fond des cartes
+#3377dd : couleur de lien dans les cartes
+*/
+
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -65,6 +85,11 @@ header nav {
     color: #f1f1f1;
     font-size: 2rem;
     text-decoration: none;
+    transition: .4s;
+}
+.logo { transition: .4s; }
+.logo:hover {
+    transform: scale(1.1) rotate(-15deg);
 }
 .nav-menu {
     display: flex;
@@ -158,6 +183,8 @@ img.img-question-mark-about {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .projet-card {
     display: flex;
@@ -165,7 +192,7 @@ img.img-question-mark-about {
     margin: 2rem;
     padding: 2rem;
     border-radius: 5px;
-    background: #fff;
+    background: #202020;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     width: 25%;
     height: 500px;
@@ -173,8 +200,6 @@ img.img-question-mark-about {
 .projet-card-img {
     width: 100%;
     border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,7 +217,7 @@ a .projet-card-img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #fff;
+    background: #202020;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 .projet-card-info {
@@ -200,7 +225,6 @@ a .projet-card-img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #010;
 }
 .projet-card-info h3 {
     transition: .4s;
@@ -209,6 +233,59 @@ a .projet-card-img {
     transform: scale(1.1);
 }
 .projet-card-info h3 a {
-    color: #010;
+    color: #3377dd;
+    text-decoration: none;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background: #202020;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    width: 25%;
+    height: 500px;
+}
+.contact-card-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+.contact-card-img:hover {
+    transform: scale(1.1);
+}
+.img-contact {
+    width: 100%;
+    height: 100%;
+}
+.contact-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-card-info h3 {
+    transition: .4s;
+}
+.contact-card-info h3:hover {
+    transform: scale(1.1);
+}
+.contact-card-info h3 a {
+    color: #3377dd;
+    text-decoration: none;
+}
+.contact-card-info p a {
+    color: #3377dd;
     text-decoration: none;
 }
