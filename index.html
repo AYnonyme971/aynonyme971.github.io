@@ -14,23 +14,28 @@
         <meta name="og:description" content="C'est mon site, développé sans librarie (j'en suis fier). Site non-responsive, déconseillé d'y aller sur téléphone ou tablette">
         <meta name="og:image" content="./img/aynonyme_logo.png">
         <meta name="theme-color" content="#74199c">
+        
     </head>
     <!-- Les devs, ça m'a même pas pris 1 heure ! -->
     <body>
       <header>
         <nav>
-          <h2 class="logo">
-            <a href="#">AYnonyme</a>
-          </h2>
-          <ul class="nav-menu">
-            <li><span class="active">Acceuil</span></li>
-            <li><a href="#qui-suis-je">Qui suis-je</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <ul class="nav-bar">
+                <li><h2 class="logo-container"><a href="#" id="logo">AYnonyme</a></h2></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                <li><a href="#" class="link-normal">Acceuil</a></li>
+                <li><a href="#qui-suis-je" class="link-normal">Qui suis-je</a></li>
+                <li><a href="#competences" class="link-normal">Compétences</a></li>
+                <li><a href="#projets" class="link-normal">Projets</a></li>
+                <li><a href="#contact" class="link-normal">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
-      </header>
+    </header>
+      
       <main>
         <section id="qui-suis-je">
           <h2>Qui suis-je ?</h2>
@@ -80,7 +85,7 @@
             </div>
             <div class="projet-card">
               <div class="projet-card-img">
-                <a href="./projets/university.html"><img src="./img/University.png" alt="" class="img-projet"></a>
+                <a href="#"><img src="https://img.freepik.com/free-vector/modern-question-mark-help-support-page_1017-27395.jpg?w=740&t=st=1683922153~exp=1683922753~hmac=ae4113a090d7320ed57cd7ecd719e3bc4cf718ad16714c97ac3d63b3f6fc172f" alt="" class="img-projet"></a>
               </div>
               <div class="projet-card-info">
                 <h3><a href="#">???????</a></h3>
@@ -106,18 +111,18 @@
       </main>
       <footer>
         <div class="copyright">
-          <p>Copyright © <span id="date">2000</span> - <a href="https://github.com/AYnonyme971">AYnonyme</a></p>
+          <p>Copyright © <span id="date">2010</span> - <a href="https://github.com/AYnonyme971">AYnonyme</a></p>
         </div>
         
         <div class="liens-container">
           <div class="lien-group">
             <h3>Résaux sociaux</h3>
             <ul class="liens-list">
-              <li><a href="https://github.com/AYnonyme971">Github</a></li>
-              <li><a href="https://youtube.com/@AYnonyme">YouTube</a></li>
-              <li><a href="https://www.instagram.com/aynonyme_off/">Instagram</a></li>
-              <li><a href="https://twitter.com/@AYnonyme_Real">Twitter</a></li>
-              <li><a href="https://tiktok.com/@aynonyme_off">TikTok</a></li>
+              <li><i class="fab fa-github"></i> <a href="https://github.com/AYnonyme971">Github</a></li>
+              <li><i class="fab fa-youtube"></i> <a href="https://youtube.com/@AYnonyme">YouTube</a></li>
+              <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/aynonyme_off/">Instagram</a></li>
+              <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/@AYnonyme_Real">Twitter</a></li>
+              <li><i class="fab fa-tiktok"></i> <a href="https://tiktok.com/@aynonyme_off">TikTok</a></li>
             </ul>
           </div>
         </div>
@@ -128,7 +133,8 @@
         const date = new Date().getFullYear();
 
         spanDate.innerHTML=date;
+        console.log(window.outerWidth);
       </script>
-
+      <script src="./responsive_header.js"></script>
     </body>
 </html> 

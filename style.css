@@ -72,10 +72,15 @@ body {
     font-family: sans-serif;
     margin: 0;
 }
+.nav-button {
+    display: none;
+}
+
+
+
 header nav {
     width: 100%;
     background: #610a0a;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,6 +112,8 @@ header nav {
 .nav-menu li a:hover {
     color: #1f1f1f;
 }
+
+
 #front-end {
     color: #234fc9;
 }
@@ -122,6 +129,9 @@ section {
     margin-top: 15vh;
 }
 section h2 {
+    text-align: center;
+}
+section p {
     text-align: center;
 }
 .img {
@@ -195,7 +205,7 @@ img.img-question-mark-about {
     background: #202020;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     width: 25%;
-    height: 500px;
+    height: 45em;
 }
 .projet-card-img {
     width: 100%;
@@ -297,4 +307,136 @@ footer {
 .copyright {
     width: 100%;
     text-align: center;
+}
+.liens-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.liens-list {
+    list-style: none;
+}
+.liens-list li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin-left: 7px;
+}
+.liens-list li { 
+    margin-top: 6px;
+ }
+i.fa-tiktok {
+    background: linear-gradient(to bottom, #0c8eff, #fff, #ff2d55);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+i.fa-youtube {
+    color: #f00;
+}
+.nav-bar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	position: relative;
+	background-color: #610a0a;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	padding-left: 30px;
+}
+
+.link-normal {
+	display: inline-block;
+	text-decoration: none;
+	color: #f1f1f1;
+	text-align: center;
+	transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	position: relative;
+}
+
+
+
+.link-normal:hover {
+	color: #131313;
+}
+
+.open-menu,
+.close-menu {
+	position: absolute;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.5rem;
+	display: none;
+}
+
+.open-menu {
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50);
+}
+
+.close-menu {
+	top: 20px;
+	right: 20px;
+
+}
+#logo {
+    transition: .5s;
+    color: #fff;
+    text-decoration: none;
+}
+li .logo-container:hover #logo {
+    transform: scale(25);
+}
+
+#check {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.menu {
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 80%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 100;
+		background-color: #610a0a;
+		transition: all 0.2s ease-in-out;
+        border-left: 1.5px solid #4d0606;
+	}
+
+	.menu li {
+		margin-top: 40px;
+        font-size: 1.3rem;
+	}
+
+	.menu li .link-normal {
+		padding: 10px;
+	}
+
+	.open-menu,
+	.close-menu {
+		display: block;
+        top: 20px;
+	}
+
+	#check:checked~.menu {
+		right: 0;
+	}
+    section p {
+        font-size: 1.3rem;
+    }
 }
