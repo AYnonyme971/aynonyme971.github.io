@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/* Couleurs utilisées : 
+/* Couleurs utilisées :
 #3377dd : le bleu des liens
 #610a0a : couleur de l'header
 #4d0606 : bordure de l'header
@@ -22,7 +22,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Verdana' ,sans-serif;
     scroll-behavior: smooth;
 }
 /*.social-media {
@@ -60,11 +60,11 @@
 }
 .tiktok:hover i {
     color: #111111;
-  
+
   filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 }
 .img {
-    
+
 }*/
 body {
     background: #181811;
@@ -323,7 +323,7 @@ footer {
     text-decoration: none;
     margin-left: 7px;
 }
-.liens-list li { 
+.liens-list li {
     margin-top: 6px;
  }
 i.fa-tiktok {
@@ -338,6 +338,7 @@ i.fa-youtube {
 .nav-bar {
 	width: 100%;
 	display: flex;
+  padding: 6px;
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
