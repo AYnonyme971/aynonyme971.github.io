@@ -69,7 +69,6 @@
 body {
     background: #181811;
     color: #f1f1f1;
-    font-family: sans-serif;
     margin: 0;
 }
 .nav-button {
@@ -163,6 +162,9 @@ img.img-question-mark-about {
     border-radius: 6px;
 }
 .loader-bg .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     height: 20px;
     border-radius: 6px;
@@ -185,6 +187,32 @@ img.img-question-mark-about {
 .skill-percent {
     padding-bottom: 1.1rem;
     font-size: 20px;
+}
+@media (max-width: 630px) {
+    .loader-bg {
+        height: 30px;
+    }
+    .loader-bg .loader {
+        height: 30px;
+    }
+    .loader-bg .loader .skill {
+        font-size: 1.5rem;
+    }
+    .loader-html {
+        width: 98%;
+        background: #e44d26;
+    }
+    .loader-css {
+        width: 90%;
+        background: #264de4;
+    }
+    .loader-js {
+        width: 89%;
+        background: #f0db4f;
+    }
+    .loader-js .skill {
+        color: #010;
+    }
 }
 .loader-group i {
     font-size: 1.5rem;
@@ -246,7 +274,44 @@ a .projet-card-img {
     color: #3377dd;
     text-decoration: none;
 }
+.projet-card-info p {
+    bottom: 1px;
+}
+@media (max-width: 630px) {
+    .projets-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .projet-card {
+        width: 75%;
+    }
+    .projet-card-img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        height: auto!important;
+    }
+    .projet-card-info {
+        margin-top: 10px;
+    }
+    .projet-card-info p {
+        padding-top: 20px;
+        font-size: 1.50rem;
+    }
+    .projet-card-info h3 {
+        font-size: 2rem;
+    }
+    .projet-card-info h3:hover {
+        transform: scale(1.3);
+    }
+}
 
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+}
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -299,6 +364,19 @@ a .projet-card-img {
     color: #3377dd;
     text-decoration: none;
 }
+@media (max-width: 630px) {
+    .contact-card {
+        width: 75%;
+    }
+    .contact-card-img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-card-info {
+        margin-top: 15px;
+    }
+}
 footer {
     background: #292929;
     margin: 0;
@@ -308,12 +386,16 @@ footer {
     width: 100%;
     text-align: center;
 }
+.copyright a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
 .liens-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .liens-list {
     list-style: none;
@@ -338,7 +420,7 @@ i.fa-youtube {
 .nav-bar {
 	width: 100%;
 	display: flex;
-  padding: 6px;
+    padding: 6px;
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
@@ -402,8 +484,9 @@ li .logo-container:hover #logo {
 	display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 730px) {
 	.menu {
+        margin-top: 0;
         display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -433,6 +516,9 @@ li .logo-container:hover #logo {
 		display: block;
         top: 20px;
 	}
+    .close-menu {
+        top: 35px;
+    }
 
 	#check:checked~.menu {
 		right: 0;
