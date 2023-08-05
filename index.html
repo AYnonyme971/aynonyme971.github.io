@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AYnonyme</title>
+    </head>
+    <body>
+        <script>
+            const language = navigator.userLanguage || navigator.language;
+            if (language.endsWith("fr-FR")) {
+                window.location.href = "fr/index.html";
+            } else {
+                window.location.href = "en/index.html";
+            }
+        </script>
+    </body>
+</html>
