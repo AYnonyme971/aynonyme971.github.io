@@ -1,18 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AYnonyme</title>
-    </head>
-    <body>
-        <script>
-            const language = navigator.userLanguage || navigator.language;
-            if (language.endsWith("fr-FR")) {
-                window.location.href = "fr/index.html";
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Super cool embed goes here -->
+    <meta name='theme-color' content='#ff0000'>
+    <meta name='og:title' content='AYnonyme'>
+    <meta name='og:type' content='website'>
+    <meta name='og:url' content='https://aynonyme971.is-a-good.dev'>
+    <meta name='og:website_name' content='AYnonyme'>
+    <meta name='og:image' content='img/logo.png'>
+    <!-- End of the best embed ;) -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>AYnonyme</title>
+</head>
+<body>
+    <header>
+        <a class="logo">
+            AYnonyme
+        </a>
+        <ul class="nav-links">
+            <li class="nav-link" style="--bg: red;"><a href="#">Acceuil</a></li>
+            <li class="nav-link"><a href="#qui-suis-je" style="--bg: royalblue;">Qui suis-je</a></li>
+            <li class="nav-link"><a href="#projets" style="--bg: lime;">Projets</a></li>
+            <li class="nav-link"><a href="#contact" style="--bg: #888;">Contact</a></li>
+        </ul>
+        <button id="navBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section id="qui-suis-je">
+            <h2 style="--bg: royalblue">Qui suis-je ?</h2>
+            <div class="qs-img">
+                <img src="">
+            </div>
+            <p>Je suis AYnonyme<br>Je suis un développeur front-end qui se met en route vers le fullstack</p>
+        </section>
+        <section id="projets">
+            <h2 style="--bg: lime;">Projets</h2>
+            <div class="projets">
+                <div class="projet">
+                    <h3>password-npm</h3>
+                    <i class="fab fa-npm" style="--color: #CC3534;"></i>
+                    <p>password-npm est un module vous permettant de générer des mots de passes sécurisés, des id temporaires rapidement</p>
+                    <a href="https://npmjs.com/package/password-npm" target="_blank" class="btn" style="--bg: #cc3534;">Voir le package</a>
+                    <a href="https://github.com/AYnonyme971/password-npm" target="_blank" class="btn" style="--bg: #333;">Voir le repo</a>
+                </div>
+                <div class="projet">
+                    <h3>blague-npm</h3>
+                    <i class="fab fa-npm" style="--color: #CC3534;"></i>
+                    <p>blague-npm est un module de blague bi-lingue qui donne des blagues aléatoires (Faites un pull request pour ajouter des blagues !)</p>
+                    <a href="https://npmjs.com/package/blague-npm" target="_blank" class="btn" style="--bg: #cc3534;">Voir le package</a>
+                    <a href="https://github.cpù/AYnonyme971/blague-npm" target="_blank" class="btn" style="--bg: #333;">Voir le repo</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 style="--bg: #888;">Contact</h2>
+            <div class="contacts">
+                <div class="contact">
+                    <i class="fab fa-discord"></i>
+                    <p>Contactez moi sur Discord via MP</p>
+                    <a href="https://discord.com/users/943580965446512661" target="_blank" class="btn" style="--bg: #5865F2">Me MP</a>
+                </div>
+                <div class="contact">
+                    <i class="fab fa-instagram"></i>
+                    <p>Contactez moi sur Instagram via DM</p>
+                    <a href="https://instagram.com/aynonyme_off" target="_blank" class="btn" style="--bg: #EB459E">Me DM</a>
+                </div>
+                <div class="contact">
+                    <i class="fas fa-envelope"></i>
+                    <p>Vous pouvez aussi m'envoyer un mail</p>
+                    <a href="mailto:aynonyme971@gmail.com?subject=Contact" class="btn" style="--bg: orangered">M'envoyer un e-mail</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Mes résaux sociaux</h3>
+            <div class="social-medias">
+                <a href="https://youtube.com/@AYnonyme" style="--color: red;" ><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/AYnonyme971" class="fab fa-github"></a>
+                <a href="https://instagram.com/aynonyme_off" class="fab fa-instagram"></a>
+                <a href="https://twitter.com/@AYnonyme_Real" class="fab fa-x-twitter"></a>
+                <a href="https://tiktok.com/aynonyme_off" class="fab fa-tiktok"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Liens</h3>
+            <div class="footer-links">
+                <a href="#">Acceuil</a>
+                <a href="#qui-suis-je">Qui suis-je</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.querySelector("header")
+        window.addEventListener("scroll", () => {
+            const y = scrollY;
+            if(y >= 5) {
+                header.classList.add("scroll");
             } else {
-                window.location.href = "en/index.html";
+                header.classList.remove("scroll");
             }
-        </script>
-    </body>
+        })
+    </script>
+</body>
 </html>
+<!-- Super usefull comment here -->
