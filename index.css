@@ -46,6 +46,12 @@ header.scroll {
 }
 #navBtn {
     display: none;
+    font-size: 2rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 .logo {
     font-size: 2em;
@@ -234,5 +240,32 @@ footer {
 @media (max-width: 800px) {
     .projets {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    #navBtn {
+        display: block;
+    }
+    .nav-links {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        transform: translateX(-500px);
+        transition: transform .4s ease, visibility .4s ease;
+        background: #000;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        height: 100vh;
+        width: 70vw;
+    }
+    .nav-link {
+        font-size: 2rem;
+    }
+    .nav-links.active {
+        visibility: visible;
+        transform: translateX(0);
     }
 }
