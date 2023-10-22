@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="theme-color" content="#613583" />
+        <meta name="og:title" content="AYnonyme | D-Embed Maker" />
+        <meta name="og:website_name" content="AYnonyme | Tools" />
+        <meta
+            name="og:description"
+            content="This is my first tool, it's for creating Discord embeds easily"
+        />
+        <meta name="og:url" content="https://aynonyme971.is-a-good.dev" />
+
+        <title>AYnonyme | D-Embed Maker</title>
+        <link rel="stylesheet" href="d-embed.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <a href="../tools.html" class="fas fa-home"></a>
+        <div class="container">
+            <form>
+                <h2>D-Embed Maker</h2>
+                <div class="inputs">
+                    <div class="input">
+                        <span style="--right: 5rem">Website URL:</span
+                        ><input
+                            type="text"
+                            id="url"
+                            required
+                            placeholder="Your website URL..."
+                        />
+                    </div>
+                    <div class="input">
+                        <span style="--right: 4.75rem">Website Title:</span>
+                        <input
+                            type="text"
+                            id="title"
+                            required
+                            placeholder="Website title..."
+                        />
+                    </div>
+                    <div class="input">
+                        <span style="--right: 0.5rem"
+                            >Website Description:
+                        </span>
+                        <input
+                            type="text"
+                            id="desc"
+                            placeholder="Website description..."
+                        />
+                    </div>
+                    <div class="input">
+                        <span style="--right: 16.25rem">Website Color: </span>
+                        <input type="color" id="color" />
+                    </div>
+                    <div class="input">
+                        <span style="--right: 3.75rem">Website Name:</span>
+                        <input
+                            type="text"
+                            id="name"
+                            required
+                            placeholder="Website Name"
+                        />
+                    </div>
+                </div>
+                <button type="submit">Make it!</button>
+            </form>
+            <div id="output"></div>
+        </div>
+        <script src="d-embed.js"></script>
+    </body>
+</html>
