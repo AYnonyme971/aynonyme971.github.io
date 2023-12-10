@@ -1,0 +1,30 @@
+#loader {
+  background: red;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 9999999;
+  transition: .4s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.dot {
+  background: #fff;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  12.5%{
+    transform: scaleX(1.25) translateY(-2.5px);
+  }
+  25% {
+    transform: scaleX(1.35) translateY(-5px);
+  }
+  50%{
+    transform: scaleX(1.20) translateY(2px);
+  }
+}

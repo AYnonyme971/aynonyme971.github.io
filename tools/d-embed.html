@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <meta name="theme-color" content="#613583" />
         <meta name="og:title" content="AYnonyme | D-Embed Maker" />
         <meta name="og:website_name" content="AYnonyme | Tools" />
@@ -19,20 +18,29 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         />
+        <link rel="stylesheet" href="../assets/css/loading.css">
     </head>
     <body>
+        <div id="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
         <a href="../tools.html" class="fas fa-home"></a>
         <div class="container">
+            <i id="info">?</i>
             <form>
                 <h2>D-Embed Maker</h2>
                 <div class="inputs">
+                    <label for="realTime">Real Time Update</label>
+                    <input type="checkbox" id="realTime" />
                     <div class="input">
                         <span style="--right: 5rem">Website URL:</span
                         ><input
                             type="text"
                             id="url"
                             required
-                            placeholder="Your website URL... (without https://)"
+                            placeholder="Your website URL..."
                         />
                     </div>
                     <div class="input">
@@ -55,7 +63,7 @@
                         />
                     </div>
                     <div class="input">
-                        <span style="--right: 16.25rem">Website Color: </span>
+                        <span style="--right: 13.25rem">Website Color: </span>
                         <input type="color" id="color" />
                     </div>
                     <div class="input">
@@ -63,15 +71,26 @@
                         <input
                             type="text"
                             id="name"
-                            required
                             placeholder="Website Name"
                         />
+                    </div>
+                    <div class="input">
+                        <span style="--right: 1rem;">Website Image Link</span>
+                        <input type="text" id="image" placeholder="Image URL... (optionnal)">
                     </div>
                 </div>
                 <button type="submit">Make it!</button>
             </form>
             <div id="output"></div>
+            <!-- <div class="pop_up">Copied!</div> -->
         </div>
+        <div id="btns">
+            <i id="bfr">&LeftArrow;</i>
+            <i id="home">&UpArrow;</i>
+            <i id="aft">&RightArrow;</i>
+          </div>
+          <script src="btns.js"></script>
         <script src="d-embed.js"></script>
+        <script src="../assets/js/loading.js"></script>
     </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord Embed Previewer</title>
+    <link rel="stylesheet" href="d-preview.css" />
+    <link rel="stylesheet" href="../assets/css/loading.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <script src="../assets/js/loading.js"></script>
+    <div class="container">
+      <i id="info">&CirclePlus;</i>
+      <header>
+        <h2>Discord Embed Previewer</h2>
+      </header>
+      <form>
+        <input type="text" id="code" placeholder="Place your code here..." />
+        <button type="submit">See the Result!</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <div id="btns">
+      <i id="bfr">&LeftArrow;</i>
+      <i id="home">&UpArrow;</i>
+      <i id="aft">&RightArrow;</i>
+    </div>
+    <script src="btns.js"></script>
+    <script src="d-preview.js"></script>
+  </body>
+</html>

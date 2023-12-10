@@ -13,11 +13,17 @@
     <meta name='og:image' content='img/logo.png'>
     <!-- End of the best embed ;) -->
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="assets/css/loading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>AYnonyme</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 <body>
+    <div id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
     <header>
         <a class="logo">
             AYnonyme
@@ -26,7 +32,6 @@
             <li class="nav-link" style="--bg: red;"><a href="#">Acceuil</a></li>
             <li class="nav-link"><a href="#qui-suis-je" style="--bg: royalblue;">Qui suis-je</a></li>
             <li class="nav-link"><a href="#projets" style="--bg: lime;">Projets</a></li>
-            <li class="nav-link"><a href="tools.html">Tools (beta)</a></li>
             <li class="nav-link"><a href="#contact" style="--bg: #888;">Contact</a></li>
         </ul>
         <button id="navBtn">
@@ -40,7 +45,7 @@
             <div class="qs-img">
                 <img src="">
             </div>
-            <p>Je suis AYnonyme<br>Je suis un développeur front-end qui se met en route vers le fullstack</p>
+            <p>Je suis AYn0nyme<br>Je suis un développeur front-end (doit revoir ses designs 👀) qui se met en route vers le fullstack</p>
         </section>
         <section id="projets">
             <h2 style="--bg: lime;">Projets</h2>
@@ -57,7 +62,7 @@
                     <i class="fab fa-npm" style="--color: #CC3534;"></i>
                     <p>blague-npm est un module de blague bi-lingue qui donne des blagues aléatoires (Faites un pull request pour ajouter des blagues !)</p>
                     <a href="https://npmjs.com/package/blague-npm" target="_blank" class="btn" style="--bg: #cc3534;">Voir le package</a>
-                    <a href="https://github.cpù/AYnonyme971/blague-npm" target="_blank" class="btn" style="--bg: #333;">Voir le repo</a>
+                    <a href="https://github.com/AYnonyme971/blague-npm" target="_blank" class="btn" style="--bg: #333;">Voir le repo</a>
                 </div>
             </div>
         </section>
@@ -77,7 +82,7 @@
                 <div class="contact">
                     <i class="fas fa-envelope"></i>
                     <p>Vous pouvez aussi m'envoyer un mail</p>
-                    <a href="mailto:aynonyme971@gmail.com?subject=Contact" class="btn" style="--bg: orangered">M'envoyer un e-mail</a>
+                    <a href="mailto:aynonyme971@gmail.com?subject=Contact&body=Wow!%20Super%20Site😉😂" class="btn" style="--bg: orangered">M'envoyer un e-mail</a>
                 </div>
             </div>
         </section>
@@ -101,6 +106,7 @@
                 <a href="#qui-suis-je">Qui suis-je</a>
                 <a href="#projets">Projets</a>
                 <a href="#contact">Contact</a>
+                <a href="tools.html">Tools (bêta 👀)</a>
             </div>
         </div>
     </footer>
@@ -122,6 +128,8 @@
 
         navBtn.onclick = () => navLinks.classList.toggle("active");
     </script>
+    <script src="assets/js/secret.js"></script>
+    <script src="assets/js/loading.js"></script>
 </body>
 </html>
 <!-- Super usefull comment here -->

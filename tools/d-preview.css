@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap&family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Montserrat, Cantarell, Ubuntu, sans-serif;
+}
+body {
+  background: #181818;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  position: relative;
+}
+#info {
+  font-style: normal;
+  cursor: pointer;
+  font-size: 2rem;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header {
+  margin-top: 2rem;
+  text-align: center;
+}
+#code {
+  width: 100%;
+  margin-top: 5px;
+  min-height: 50px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+#result {
+  padding: 8px;
+  margin-top: 15px;
+  border-radius: 5px;
+  min-width: 100%;
+  min-height: 150px;
+  background-color: #23272a;
+}
+.embed {
+  display: grid;
+  place-items: center;
+  height: 150px;
+}
+#embed {
+  background: #121212;
+  border-radius: 2.5px;
+  padding: 5px 2.5px;
+  width: 70%;
+  height: 125px;
+  position: relative;
+}
+#color {
+  position: absolute;
+  bottom: 0;
+  border-radius: 2.5px;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: var(--background);
+}
+#title {
+  font-family: Montserrat, Cantarell, Ubuntu, monospace;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* font-size: ; */
+}
+button {
+  background: #4f8;
+  outline: none;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  padding: 3px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #00000055;
+  transition: .2s;
+}
+button:active {
+  transform: translateY(2px);
+}
+i {
+  color: #fff;
+  font-style: normal;
+}
+#btns {
+  position: fixed;
+  width: 100%;
+  bottom: 40px;
+  height: 50px;
+  user-select: none;
+}
+#bfr {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  font-size: 5rem;
+  cursor: pointer;
+}
+#home {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  font-size: 5rem;
+  cursor: pointer;
+}
+#aft {
+  position: absolute;
+  bottom: 0;
+  font-size: 5rem;
+  cursor: pointer;
+  right: 15px;
+}
